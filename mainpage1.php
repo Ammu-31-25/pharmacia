@@ -9,6 +9,7 @@
 	</title>
 	<!-- copy this line of code -->
 	<link rel="stylesheet" href="bootstrap/node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<style>
 		body {
 			background-image: url('pharm1.png');
@@ -16,19 +17,25 @@
 			background-size: cover;
 			background-position: center;
 		}
+		#logoImage {
+			height: inherit;
+			width: auto;
+			max-height: 150px;
+		}
 	</style>
 </head>
 
 
 <body>
 	<div class="d-flex flex-column mb-3 vh-100 justify-content-between">
-		<div class="container-fluid bg-primary-subtle opacity-75 d-flex flex-row justify-content-center">
+		<div class="container-fluid bg-primary-subtle opacity-75 d-flex flex-row justify-content-between">
 			<div class="">
 				<h1 class="display-1">PHARMACIA</h1>
 				<p class="lead text-center">Pharmacy Management System</p>
 			</div>
-
-
+			<div>
+			<img src="logo.png.png" alt="logo" class="float-end my-auto" id="logoImage">
+			</div>
 		</div>
 		<div class="container border border-1 rounded-4 shadow m-auto p-5 bg-body-tertiary" style="max-width:500px;">
 
