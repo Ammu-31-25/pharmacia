@@ -69,9 +69,7 @@
 	</div>
 
 	<div class=footer>
-		<br>
-		Powered by VE Technologies.
-		<br><br>
+		<!-- FOOTER GOES HERE -->
 	</div>
 	<!-- copy these two lines of code -->
 	<script src="bootstrap/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
