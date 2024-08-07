@@ -30,7 +30,7 @@
 
 
 		</div>
-		<div class="container border border-1 rounded-4 shadow m-auto p-5 bg-body-tertiary">
+		<div class="container border border-1 rounded-4 shadow m-auto p-5 bg-body-tertiary" style="max-width:500px;">
 
 				<form method="post" action="">
 					<div id="div_login">
@@ -44,11 +44,11 @@
 							<input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" id="pwd" name="pwd">
 						</div>
 
-						<div>
+						<div class="d-flex flex-row justify-content-between">
 
-							<input type="submit" value="Submit" name="submit" id="submit" />
+							<input type="submit" value="Submit" name="submit" id="submit" class="btn btn-outline-primary"/>
 							<br>
-							<input type="submit" value="Click here for Pharmacist Login" name="psubmit" id="submit" />
+							<input type="submit" value="Click here for Pharmacist Login" name="psubmit" id="submit" class="btn btn-outline-primary "/>
 
 							<?php
 
@@ -95,7 +95,7 @@
 								<use xlink:href="#bootstrap"></use>
 							</svg>
 						</a>
-						<span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+						<span class="mb-3 mb-md-0 text-body-secondary">© 2024 Pharmacy Management System</span>
 					</div>
 				</footer>
 			</div>
