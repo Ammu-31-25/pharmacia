@@ -13,13 +13,13 @@
 
 <body>
 	<div class="header">
-		<h1>PHARMACIA</h1>
+		<h1 class="display-1">PHARMACIA</h1>
 		<p class="lead">Pharmacy Management System</p>
 	</div>
 	<div class="container-fluid">
 		<form method="post" action="">
 			<div id="div_login">
-				<h1>Pharmacist Login</h1>
+				<h1 class="display-3">Pharmacist Login</h1>
 
 				<div>
 					<input type="text" class="textbox" id="uname" name="uname" placeholder="Username" />
@@ -70,9 +70,7 @@
 		</form>
 	</div>
 	<div class=footer>
-		<br>
-		Powered by VE Technologies.
-		<br><br>
+		<!-- footer goes here -->
 	</div>
 	<script src="bootstrap/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="bootstrap/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
