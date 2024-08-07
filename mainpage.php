@@ -21,12 +21,24 @@
 			<div id="div_login">
 				<h1 class="display-3">Admin Login</h1>
 
-				<div>
+				<!-- <div>
 					<input type="text" class="textbox" id="uname" name="uname" placeholder="Username" />
+				</div> -->
+
+				<div class="input-group mb-3">
+					<span class="input-group-text" id="basic-addon1">@</span>
+					<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" id="uname" name="uname">
 				</div>
-				<div>
+
+				<!-- <div>
 					<input type="password" class="textbox" id="pwd" name="pwd" placeholder="Password" />
+				</div> -->
+
+				<div class="input-group mb-3">
+					<span class="input-group-text" id="basic-addon1">*</span>
+					<input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" id="pwd" name="pwd">
 				</div>
+
 				<div>
 
 					<input type="submit" value="Submit" name="submit" id="submit" />
