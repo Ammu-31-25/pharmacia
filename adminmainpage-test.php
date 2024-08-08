@@ -9,6 +9,7 @@
     <title>Pharmacia: Admin Dashboard</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <style>
         .bd-placeholder-img {
@@ -90,7 +91,7 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="/snippets/navbars-offcanvas/navbars-offcanvas.css" rel="stylesheet">
+    <link href="snippets/navbars-offcanvas/navbars-offcanvas.css" rel="stylesheet">
 </head>
 
 <body>
@@ -201,26 +202,27 @@
         <div class="container my-5 vh-80">
             <p class="lead">Admin Dashboard</p>
             <div class="container text-center">
-                <div class="row">
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"
-                                class="bi bi-cart-plus card-img-top" viewBox="0 0 16 16">
-                                <path
-                                    d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z" />
-                                <path
-                                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
-                            </svg>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk of the
-                                    card's content.
-                                </p>
+                <div class="row text-center">
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <a href="pos1.php" data-toggle="tooltip" data-placement="top" title="Add new Sale" >
+                            <div class="card p-4 m-4 shadow rounded-4 btn" style="width: 18rem;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"
+                                    class="bi bi-cart-plus card-img-top" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z" />
+                                    <path
+                                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                                </svg>
+                                <div class="card-body">
+
+                                </div>
                             </div>
-                        </div>
+                        </a>
+
                     </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <a href="inventory-view.php" data-toggle="tooltip" data-placement="top" title="View Inventory">
+                        <div class="card p-4 m-4 shadow rounded-4 btn" style="width: 18rem;">
                             <!-- <img src="inventory.png" class="card-img-top" alt="..."> -->
                             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"
                                 class="bi bi-list-ul card-img-top" viewBox="0 0 16 16">
@@ -228,15 +230,15 @@
                                     d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
                             </svg>
                             <div class="card-body">
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk of the
-                                    card's content.
-                                </p>
+
                             </div>
                         </div>
+                        </a>
+                        
                     </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <a href="employee-view.php" data-toggle="tooltip" data-placement="top" title="View Employees">
+                        <div class="card p-4 m-4 shadow rounded-4 btn" style="width: 18rem;">
                             <!-- <img src="carticon1.png" class="card-img-top" alt="..."> -->
                             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"
                                 class="bi bi-person-lines-fill card-img-top" viewBox="0 0 16 16">
@@ -244,54 +246,60 @@
                                     d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z" />
                             </svg>
                             <div class="card-body">
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk of the
-                                    card's content.
-                                </p>
+
                             </div>
                         </div>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-6">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-6 d-flex justify-content-center align-items-center">
+                        <a href="salesreport.php" data-toggle="tooltip" data-placement="top" title="View Sales Report">
+                        <div class="card p-4 m-4 shadow rounded-4 btn" style="width: 18rem;">
                             <!-- <img src="carticon1.png" class="card-img-top" alt="..."> -->
                             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"
-                                class="bi bi-person-lines-fill card-img-top" viewBox="0 0 16 16">
+                                class="bi bi-cash-stack" viewBox="0 0 16 16">
+                                <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
                                 <path
-                                    d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z" />
+                                    d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2z" />
                             </svg>
                             <div class="card-body">
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk of the
-                                    card's content.
-                                </p>
+
                             </div>
                         </div>
+                        </a>
                     </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-6 d-flex justify-content-center align-items-center">
+                        <a href="stockreport.php" data-toggle="tooltip" data-placement="top" title="Low Stock Alert">
+                        <div class="card p-4 m-4 shadow rounded-4 btn" style="width: 18rem;">
                             <!-- <img src="carticon1.png" class="card-img-top" alt="..."> -->
                             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"
-                                class="bi bi-person-lines-fill card-img-top" viewBox="0 0 16 16">
+                                class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
                                 <path
-                                    d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z" />
+                                    d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z" />
+                                <path
+                                    d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
                             </svg>
                             <div class="card-body">
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk of the
-                                    card's content.
-                                </p>
+
                             </div>
                         </div>
+                        </a>
+                        
                     </div>
                 </div>
             </div>
 
         </div>
     </main>
+    <script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+    <script src="bootstrap/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
