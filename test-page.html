@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Test Page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
@@ -91,11 +92,12 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="/snippets/navbars-offcanvas/navbars-offcanvas.css" rel="stylesheet">
+    <link href="snippets/navbars-offcanvas/navbars-offcanvas.css" rel="stylesheet">
 </head>
 
 <body>
     <main>
+        <!-- navigation bar stuff -->
         <nav class="navbar navbar-light bg-primary" style="background-color:#003366;" aria-label="Dark offcanvas navbar">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark" aria-label="Toggle navigation">
@@ -103,7 +105,8 @@
                 </button>
                 <h1 class="heading-2" style="color:aliceblue;">PHARMACIA</h1>
 
-                <a href="logout.php" style="text-decoration: none;color:azure;" class="lead">Logout(Logged in as Admin)</a>
+                <a href="logout.php" style="text-decoration: none;color:azure;" class="lead">Logout(Logged in as
+                    Admin)</a>
 
                 <div class="offcanvas offcanvas-start text-bg-light" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
                     <div class="offcanvas-header">
@@ -120,8 +123,8 @@
                                     Inventory
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Add New Medicine</a></li>
-                                    <li><a class="dropdown-item" href="">Manage Inventory</a></li>
+                                    <li><a class="dropdown-item" href="inventory-add.php">Add New Medicine</a></li>
+                                    <li><a class="dropdown-item" href="inventory-view.php">Manage Inventory</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -129,8 +132,8 @@
                                     Suppliers
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Add New Supplier</a></li>
-                                    <li><a class="dropdown-item" href="">Manage Suppliers</a></li>
+                                    <li><a class="dropdown-item" href="supplier-add.php">Add New Supplier</a></li>
+                                    <li><a class="dropdown-item" href="supplier-view.php">Manage Suppliers</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -138,8 +141,8 @@
                                     Stock Purchase
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Add New Purchase</a></li>
-                                    <li><a class="dropdown-item" href="">Manage Purchases</a></li>
+                                    <li><a class="dropdown-item" href="purchase-add.php">Add New Purchase</a></li>
+                                    <li><a class="dropdown-item" href="purchase-view.php">Manage Purchases</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -147,8 +150,8 @@
                                     Employees
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Add New Employee</a></li>
-                                    <li><a class="dropdown-item" href="">Manage Employees</a></li>
+                                    <li><a class="dropdown-item" href="employee-add.php">Add New Employee</a></li>
+                                    <li><a class="dropdown-item" href="employee-view.php">Manage Employees</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -156,27 +159,28 @@
                                     Customers
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Add New Customer</a></li>
-                                    <li><a class="dropdown-item" href="">Manage Customers</a></li>
+                                    <li><a class="dropdown-item" href="customer-add.php">Add New Customer</a></li>
+                                    <li><a class="dropdown-item" href="customer-view.php">Manage Customers</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">View Sales Invoice Details</a>
+                                <a class="nav-link" href="sales-view.php">View Sales Invoice Details</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">View Sold Products Details</a>
+                                <a class="nav-link" href="salesitems-view.php">View Sold Products Details</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Add New Sale</a>
+                                <a class="nav-link" href="pos1.php">Add New Sale</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Reports
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Medicines - Low Stock</a></li>
-                                    <li><a class="dropdown-item" href="">Medicines - Soon to Expire</a></li>
-                                    <li><a class="dropdown-item" href="">Transaction reports</a></li>
+                                    <li><a class="dropdown-item" href="stockreport.php">Medicines - Low Stock</a></li>
+                                    <li><a class="dropdown-item" href="expiryreport.php">Medicines - Soon to Expire</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="salesreport.php">Transaction reports</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -184,6 +188,7 @@
                 </div>
             </div>
         </nav>
+        <!-- actual content goes in the following div -->
         <div class="container my-5 vh-80">
             <p class="lead">Stuff goes here</p>
         </div>
