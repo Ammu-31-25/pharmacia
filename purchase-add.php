@@ -269,7 +269,7 @@
         </nav>
         <!-- actual content goes in the following div -->
         <div class="container my-5 vh-80">
-            <p class="lead">Stuff goes here</p>
+            <p class="lead">ADD PURCHASE DETAILS</p>
         </div>
         <div class="container">
             <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
@@ -303,37 +303,37 @@
                     <div class="d-flex">
                         <div class="col-6 m-1 p-1">
                             <label for="pid">Purchase ID:</label><br>
-                            <input type="number" name="pid">
+                            <input type="number" name="pid" class="form-control">
                         </div>
                         <div class="col-6 m-1 p-1">
                             <label for="sid">Supplier ID:</label><br>
-                            <input type="number" name="sid">
+                            <input type="number" name="sid" class="form-control">
                         </div>
                     </div>
                     <div class="d-flex">
                         <div class="col-6 m-1 p-1">
                             <label for="mid">Medicine ID:</label><br>
-                            <input type="number" name="mid">
+                            <input type="number" name="mid" class="form-control">
                         </div>
                         <div class="col-6 m-1 p-1">
                             <label for="pqty">Purchase Quantity:</label><br>
-                            <input type="number" name="pqty"></div>
+                            <input type="number" name="pqty" class="form-control"></div>
                     </div>
                     <div class="d-flex">
                         <div class="col-6 m-1 p-1">
                             <label for="pcost">Purchase Cost:</label><br>
-                            <input type="number" step="0.01" name="pcost"></div>
+                            <input type="number" step="0.01" name="pcost" class="form-control"></div>
                         <div class="col-6 m-1 p-1">
                             <label for="pdate">Date Of Purchase:</label><br>
-                            <input type="date" name="pdate"></div>
+                            <input type="date" name="pdate" class="form-control"></div>
                     </div>
                     <div class="d-flex">
                         <div class="col-6 m-1 p-1">
                             <label for="mdate">Manufacturing Date:</label><br>
-                            <input type="date" name="mdate"></div>
+                            <input type="date" name="mdate" class="form-control"></div>
                         <div class="col-6 m-1 p-1">
                             <label for="edate">Expiry Date:</label><br>
-                            <input type="date" name="edate"></div>
+                            <input type="date" name="edate" class="form-control"></div>
                     </div>
                 </div>
                 <div class="text-center m-3"><input type="submit" name="add" value="Add Purchase" class="btn btn-primary"></div>

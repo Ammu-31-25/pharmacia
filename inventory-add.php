@@ -282,7 +282,7 @@
                     </div>
                     <div class="col-6 m-1 p-1">
                         <label for="loc">Location:</label>
-                        <input type="text" name="loc" class="form-control" placeholder="">
+                        <input type="text" name="loc" class="form-control" placeholder="Rack Details">
                     </div>
                 </div>
                 <div class="d-flex">
