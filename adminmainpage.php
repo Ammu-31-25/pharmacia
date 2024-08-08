@@ -162,7 +162,7 @@
                 <a href="logout.php" style="text-decoration: none;color:azure;" class="lead">Logout(Logged in as
                     Admin)</a>
 
-                <div class="offcanvas offcanvas-start text-bg-light" tabindex="-1" id="offcanvasNavbarDark"
+                <div class="offcanvas offcanvas-start text-bg-auto" tabindex="-1" id="offcanvasNavbarDark"
                     aria-labelledby="offcanvasNavbarDarkLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">PHARMACIA</h5>
