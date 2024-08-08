@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="form3.css">
-<link rel="stylesheet" type="text/css" href="table2.css">
+    <link rel="stylesheet" type="text/css" href="table2.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <style>
@@ -279,7 +279,7 @@
 
 
 
-            <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+            <form action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
                 <center>
 
                     <select id="cid" name="cid">
@@ -287,18 +287,19 @@
                         </option>
 
 
-                        <?php	
-			
-		include "config.php";
-		$qry="SELECT c_id FROM customer";
-		$result= $conn->query($qry);
-		echo mysqli_error($conn);
-		if ($result->num_rows > 0) {
-			while($row = $result->fetch_assoc()) {
-				echo "<option>".$row["c_id"]."</option>";
-			}
-		}
-	?>
+                        <?php
+                        session_start();
+
+                        include "config.php";
+                        $qry = "SELECT c_id FROM customer";
+                        $result = $conn->query($qry);
+                        echo mysqli_error($conn);
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                echo "<option>" . $row["c_id"] . "</option>";
+                            }
+                        }
+                        ?>
 
                     </select>
                     &nbsp;&nbsp;
@@ -307,47 +308,44 @@
 
 
             <?php
-	
-		session_start();
-		
-		$qry1="SELECT id from admin where a_username='$_SESSION[user]'";
-		$result1=$conn->query($qry1);
-		$row1=$result1->fetch_row();
-		$eid=$row1[0];
-		
-			if(isset($_GET['sid'])) 
-			{
-				$sid=$_GET['sid'];
-			}
-			
-			if(isset($_POST['cid']))
-				$cid=$_POST['cid'];
-			
-		if(isset($_POST['custadd'])) {
-			
-				$qry2="INSERT INTO sales(c_id,e_id) VALUES ('$cid','$eid')"; 
-				if(!($result2=$conn->query($qry2))) {
-					echo "<p style='font-size:8; color:red;'>Invalid! Enter valid Customer ID to record Sales.</p>";
-				}
-		}
-	?>
+            // session_start();
+            $qry1 = "SELECT id from admin where a_username='$_SESSION[user]'";
+            $result1 = $conn->query($qry1);
+            $row1 = $result1->fetch_row();
+            $eid = $row1[0];
+
+            if (isset($_GET['sid'])) {
+                $sid = $_GET['sid'];
+            }
+
+            if (isset($_POST['cid']))
+                $cid = $_POST['cid'];
+
+            if (isset($_POST['custadd'])) {
+
+                $qry2 = "INSERT INTO sales(c_id,e_id) VALUES ('$cid','$eid')";
+                if (!($result2 = $conn->query($qry2))) {
+                    echo "<p style='font-size:8; color:red;'>Invalid! Enter valid Customer ID to record Sales.</p>";
+                }
+            }
+            ?>
 
             <form method="post">
                 <select id="med" name="med">
                     <option value="0" selected="selected">Select Medicine</option>
 
 
-                    <?php	
-		$qry3="SELECT med_name FROM meds";
-		$result3 = $conn->query($qry3);
-		echo mysqli_error($conn);
-		if ($result3->num_rows > 0) {
-			while($row4 = $result3->fetch_assoc()) {
-				
-				echo "<option>".$row4["med_name"]."</option>";
-			}
-		}
-	?>
+                    <?php
+                    $qry3 = "SELECT med_name FROM meds";
+                    $result3 = $conn->query($qry3);
+                    echo mysqli_error($conn);
+                    if ($result3->num_rows > 0) {
+                        while ($row4 = $result3->fetch_assoc()) {
+
+                            echo "<option>" . $row4["med_name"] . "</option>";
+                        }
+                    }
+                    ?>
 
                 </select>
                 &nbsp;&nbsp;
@@ -359,16 +357,15 @@
 
 
             <?php
-	
-		if(isset($_POST['search'])&&! empty($_POST['med'])) {
-			
-					$med=$_POST['med'];
-					$qry4="SELECT * FROM meds where med_name='$med'";
-					$result4=$conn->query($qry4); 
-					$row4 = $result4 -> fetch_row();
-				
-			}
-	?>
+
+            if (isset($_POST['search']) && !empty($_POST['med'])) {
+
+                $med = $_POST['med'];
+                $qry4 = "SELECT * FROM meds where med_name='$med'";
+                $result4 = $conn->query($qry4);
+                $row4 = $result4->fetch_row();
+            }
+            ?>
 
             <div class="one row" style="margin-right:160px;">
                 <form method="post">
@@ -405,33 +402,33 @@
                     <input type="submit" name="add" value="Add Medicine">&nbsp;&nbsp;&nbsp;
 
                     <?php
-		
-		if(isset($_POST['add'])) {
-			
-					$qry5="select sale_id from sales ORDER BY sale_id DESC LIMIT 1";
-					$result5=$conn->query($qry5); 
-					$row5=$result5->fetch_row();
-					$sid=$row5[0];
-					echo mysqli_error($conn);
-			
-					$mid=$_POST['medid'];
-					$aqty=$_POST['mqty'];
-					$qty=$_POST['mcqty'];
-					
-					if($qty>$aqty||$qty==0)
-					{echo "QUANTITY INVALID!";}
-					else {
-					$price=$_POST['mprice']*$qty;
-					$qry6="INSERT INTO sales_items(`sale_id`,`med_id`,`sale_qty`,`tot_price`) VALUES($sid,$mid,$qty,$price)";
-					$result6 = mysqli_query($conn,$qry6);
-					echo mysqli_error($conn);
-					
-					echo "<br><br> <center>";
-					echo "<a class='button1 view-btn' href=pos2.php?sid=".$sid.">View Order</a>";
-					echo "</center>";
-					}
-		}	
-		?>
+
+                    if (isset($_POST['add'])) {
+
+                        $qry5 = "select sale_id from sales ORDER BY sale_id DESC LIMIT 1";
+                        $result5 = $conn->query($qry5);
+                        $row5 = $result5->fetch_row();
+                        $sid = $row5[0];
+                        echo mysqli_error($conn);
+
+                        $mid = $_POST['medid'];
+                        $aqty = $_POST['mqty'];
+                        $qty = $_POST['mcqty'];
+
+                        if ($qty > $aqty || $qty == 0) {
+                            echo "QUANTITY INVALID!";
+                        } else {
+                            $price = $_POST['mprice'] * $qty;
+                            $qry6 = "INSERT INTO sales_items(`sale_id`,`med_id`,`sale_qty`,`tot_price`) VALUES($sid,$mid,$qty,$price)";
+                            $result6 = mysqli_query($conn, $qry6);
+                            echo mysqli_error($conn);
+
+                            echo "<br><br> <center>";
+                            echo "<a class='button1 view-btn' href=pos2.php?sid=" . $sid . ">View Order</a>";
+                            echo "</center>";
+                        }
+                    }
+                    ?>
 
 
                 </form>
