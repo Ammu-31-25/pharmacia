@@ -70,7 +70,7 @@ body {font-family:Arial;}
 			$profits = number_format($profit, 2);
 	?>
 			
-		<table align="right" id="table1" style="margin-right:100px;">
+		<table  id="table1" style="margin-right:100px;">
 			<tr>
 				<th>Purchase ID</th>
 				<th>Supplier ID</th>
@@ -108,7 +108,7 @@ body {font-family:Arial;}
 	echo "</table>";
 	?>	
 	
-	<table align="right" id="table1" style="margin-right:100px;">
+	<table id="table1" style="margin-right:100px;">
 		<tr>
 			<th>Sale ID</th>
 			<th>Customer ID</th>
