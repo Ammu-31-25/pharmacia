@@ -73,7 +73,7 @@
 								$result = $conn->query($sql);
 								$row = $result->fetch_row();
 								if (!$row) {
-									echo "<p style='color:red;'>Invalid username or password!</p>";
+									echo "<br><p style='color:red;'>Invalid username or password!</p>";
 								} else {
 									session_start();
 									$_SESSION['user'] = $uname;

@@ -22,7 +22,7 @@ body {font-family:Arial;}
 		<a href="logout.php">Logout</a>
 		<div class="topnav">
 		<a href="logout.php">Logout(signed in as Admin)</a>
-		<h2 style="font-family:Arial; color:white; text-align:left; float:left;"><a href="pharmmainpage.php">PHARMACIA (Dashboard)</a></h2>
+		<h2 style="font-family:Arial; color:white; text-align:left; float:left;"><a href="adminmainpage.php">PHARMACIA (Dashboard)</a></h2>
 	</div>
 	</div>
 	

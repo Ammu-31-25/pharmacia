@@ -241,7 +241,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="stockreport.php">Medicines - Low Stock</a></li>
                                     <li><a class="dropdown-item" href="expiryreport.php">Medicines - Soon to Expire</a></li>
-                                    <li><a class="dropdown-item" href="salesreport.php">Transaction reports</a></li>
+                                    <li><a class="dropdown-item" href="adminsalesreport.php">Transaction reports</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -308,7 +308,7 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col-6 d-flex justify-content-center align-items-center">
-                        <a href="salesreport.php" data-toggle="tooltip" data-placement="top" title="View Transaction Reports">
+                        <a href="adminsalesreport.php" data-toggle="tooltip" data-placement="top" title="View Transaction Reports">
                         <div class="card p-4 m-4 shadow rounded-4 btn" style="width: 18rem;">
                             <!-- <img src="carticon1.png" class="card-img-top" alt="..."> -->
                             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"

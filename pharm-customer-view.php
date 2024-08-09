@@ -34,20 +34,6 @@ Customers
 
 <body>
 
-		<div class="sidenav">
-			<h2 style="font-family:Arial; color:white; text-align:center;"> PHARMACIA </h2>
-			<a href="pharmmainpage.php">Dashboard</a>
-			
-			<a href="pharm-inventory.php">View Inventory</a>
-			<a href="pharm-pos1.php">Add New Sale</a>
-			<button class="dropdown-btn">Customers
-			<i class="down"></i>
-			</button>
-			<div class="dropdown-container">
-				<a href="pharm-customer.php">Add New Customer</a>
-				<a href="pharm-customer-view.php">View Customers</a>
-			</div>
-	</div>
 
 	<?php
 	
@@ -62,8 +48,9 @@ Customers
 		
 	?>
 
-	<div class="topnav">
+<div class="topnav">
 		<a href="logout1.php">Logout(signed in as <?php echo $ename; ?>)</a>
+		<h2 style="font-family:Arial; color:white; text-align:left; float:left;"><a href="pharmmainpage.php">PHARMACIA (Dashboard)</a></h2>
 	</div>
 	
 	<center>
@@ -81,7 +68,7 @@ Customers
 	</center>
 
 	
-	<table align="right" id="table1" style="margin-right:100px;">
+	<table  id="table1" style="margin-right:100px;">
 		<tr>
 			<th>Customer ID</th>
 			<th>First Name</th>
