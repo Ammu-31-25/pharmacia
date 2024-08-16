@@ -24,7 +24,7 @@ New Sales
 	</div>
 	</center>
 
-	<table align='right' id='table1'>
+	<table id='table1'>
 		<tr>
 			<th>Medicine ID</th>
 			<th>Medicine Name</th>
@@ -105,7 +105,7 @@ New Sales
 				$tot=$row3['TOTAL'];
 			}
 			
-		echo "<table align='right' id='table1'>
+		echo "<table id='table1'>
 			
 		<tr style='background-color: #f2f2f2;'>
 		<td>Total</td>
