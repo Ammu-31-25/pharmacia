@@ -149,7 +149,7 @@ New Sales
 					
 					</div>
 					<label for="mcqty">Quantity Required:</label>
-					<input type="number" name="mcqty">
+					<input type="number" name="mcqty" required>
 					&nbsp;&nbsp;&nbsp;
 					<input type="submit" name="add" value="Add Medicine">&nbsp;&nbsp;&nbsp;
 			
