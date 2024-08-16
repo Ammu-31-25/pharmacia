@@ -144,7 +144,7 @@ body {font-family:Arial;}
 	}
 	?>
 	
-	<table align="right" id="table1" style="margin-bottom:100px;margin-right:100px;">
+	<table id="table1">
 	<tr style="background-color: #f2f2f2;" >
 		<td>Transaction Amount </td>
 				<td>Rs.<?php echo $profits; }?></td>
